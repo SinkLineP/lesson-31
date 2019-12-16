@@ -2,9 +2,9 @@
 
 <h2>Записаться</h2>
 <p>На этой странице вы можете записатся к нам Barber Shop</p>
-""
-<%@clients.each do |c|%>
-<form action="/visit" method="POST" role="form" style="background-color: <%=c.color%>">
+
+
+<form action="/visit" method="POST" role="form">
 
   <div class="form-group">
     <label>Ваше имя:</label>
@@ -55,7 +55,7 @@
   <button type="submit" class="btn btn-success">Записаться</button>
 
 </form>
-<%end%>
+
 <script type="text/javascript">
 $(function(){
 	$('#color').simplecolorpicker();
